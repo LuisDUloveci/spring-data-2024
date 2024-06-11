@@ -4,10 +4,10 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8" />
-        <title>Gênero</title>
+        <title>Gêneros</title>
     </head>
     <body>
-        <h1>Novo Gênero</h1>
+        <h1>Gêneros</h1>
             <a href="/generos/insert">Novo Gênero</a>
             <table>
                 <tr>
@@ -20,13 +20,11 @@
                         <td>${item.id}</td>
                         <td>${item.nome}</td>
                         <td>
-                            <a href="/generos.update?id=${item.id}">Editar</a>
-                            <a href="/generos.delete?id=${item.id}">Excluir</a>
+                            <a href="/generos/update?id=${item.id}">Editar</a>
+                            <a href="/generos/delete?id=${item.id}">Excluir</a>
                         </td>
                     </tr>
                 </c:forEach>
             </table>
     </body>
 </html>
-
-
